@@ -1,0 +1,27 @@
+<div class="d-flex">
+  <div class="form-group w-50">
+    <label for="email">Price</label>
+    <input
+      type="email"
+      class="form-control"
+      placeholder="Enter Price"
+      [(ngModel)]="price"
+    />
+  </div>
+  <div class="form-group w-50">
+    <label for="email">Discount Price</label>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Enter Discount Price"
+      [(ngModel)]="Discountprice"
+    />
+  </div>
+</div>
+<h4>
+  Final Price &#8377;<span>{{ Discountprice }}</span>
+  <del>&#8377;{{ price }}</del>
+</h4>
+<p>{{ ((price - Discountprice) / price) * 100 }}% off</p>
+
+<!-- percentage difference between two values -->
