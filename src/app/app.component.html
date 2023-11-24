@@ -1,1 +1,27 @@
-<app-manageuser></app-manageuser>
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+  <div class="collapse navbar-collapse" id="collapsibleNavId">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="discount">Discount</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="manageuser">manageuser</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="products">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="standalone">Standalone</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-12"><router-outlet></router-outlet></div>
+  </div>
+</div>

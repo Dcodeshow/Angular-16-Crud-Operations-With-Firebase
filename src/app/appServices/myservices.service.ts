@@ -6,7 +6,9 @@ import { BehaviorSubject, Subject } from 'rxjs';
   providedIn: 'root',
 })
 export class MyservicesService {
-  constructor() {}
+  constructor() {
+    console.log('MyservicesService');
+  }
   month = ['Jan', 'Feb', 'March'];
   username = 'I am Angular 7';
   client = [

@@ -3,4 +3,6 @@ import { Component, ViewChild } from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.component.html',
 })
-export class AppComponent {}
+export class AppComponent {
+  uname:string = 'yash'
+}
